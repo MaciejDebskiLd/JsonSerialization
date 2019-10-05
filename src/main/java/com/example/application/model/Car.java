@@ -8,6 +8,10 @@ public class Car {
     private Color color;
     private Engine engine;
 
+    public Car(){
+
+    }
+
     public Car(String brand, String model, int yearOfProduction, Color color, Engine engine) {
         this.brand = brand;
         this.model = model;

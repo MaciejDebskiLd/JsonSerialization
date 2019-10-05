@@ -6,6 +6,10 @@ public class Engine {
     private int power;
     private int capacity;
 
+    public Engine(){
+
+    }
+
     public Engine(String name, int power, int capacity) {
         this.name = name;
         this.power = power;
