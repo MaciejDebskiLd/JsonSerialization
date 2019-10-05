@@ -3,15 +3,13 @@ package com.example.application.controller;
 import com.example.application.model.Car;
 import com.example.application.model.Color;
 import com.example.application.model.Engine;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.PostConstruct;
 import java.util.HashMap;
 import java.util.Map;
 
+@RestController
 public class CarController {
 
     private Map<Long, Car> cars;
