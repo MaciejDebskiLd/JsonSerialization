@@ -1,9 +1,18 @@
 package com.example.application.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Car {
 
     private String brand;
+
+    @JsonIgnore
     private String model;
+
+    @JsonProperty("year-of-production")
     private int yearOfProduction;
     private Color color;
     private Engine engine;
